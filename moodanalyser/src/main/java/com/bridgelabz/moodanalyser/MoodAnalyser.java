@@ -9,13 +9,19 @@ public class MoodAnalyser {
 
 	}
 
-	public String analyseMood(String message){
-	        if (message.contains("Sad"))
-	            return "Sad";
-	        else if (message.contains("Happy"))
-	            return "Happy";
-	        else
-	            return "Happy";
-	    
+	public String analyseMood(){
+		 try{
+	            if (message.contains("Sad"))
+	                return "SAD";
+	            else if (message.contains("Happy"))
+	                return "HAPPY";
+	            else
+	                return "HAPPY";
+
+	        }catch (NullPointerException e){
+	            System.out.println("Please Enter the Valid Mood.");
+	        }
+	        return "";
+	    }
 	}
-}
+
