@@ -6,6 +6,7 @@ public class MoodAnalyser {
 	 public MoodAnalyser(String message) {
 		super();
 		this.message = message;
+
 	}
 
 	public String analyseMood(String message){
@@ -14,7 +15,7 @@ public class MoodAnalyser {
 	        else if (message.contains("Happy"))
 	            return "Happy";
 	        else
-	            return null;
+	            return "Happy";
 	    
 	}
 }
